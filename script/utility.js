@@ -36,3 +36,13 @@ function setEnnerText(elementId, value){
   const element = document.getElementById(elementId);
   element.innerText = value
 }
+
+function getValueElementById(elementId){
+  const element = document.getElementById(elementId);
+  const inputValue = element.value;
+  return inputValue;
+}
+function hideValue(elementId, valus){
+  const element = document.getElementById(elementId);
+  element.value = valus;
+}
