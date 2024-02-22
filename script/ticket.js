@@ -1,3 +1,8 @@
+function buyTicket(){
+  document.getElementById('ticketSection')
+}
+
+
 // seat-1
 let updateValue = 0;
 let totalPrice = 0;
@@ -15,14 +20,14 @@ document.getElementById("A1").addEventListener("click", function () {
   const haveSeat = getElementInnerTextById("haveSeat");
   const totleSeat = haveSeat - 1;
 
-  const element =makeElementAndAppenById('A1');
-  const constainer = document.getElementById('containerf')
-  
+  const element = makeElementAndAppenById("A1");
+  const constainer = document.getElementById("containerf");
+
   if (A1 == false && updateValue <= 4) {
     addBgAndTextColorById("A1");
     // showSection("A1c");
-    constainer.appendChild(element)
-    getElementIdAndValueReturnNewValue("abailableSeat",totleSeat )
+    constainer.appendChild(element);
+    getElementIdAndValueReturnNewValue("abailableSeat", totleSeat);
     getElementIdAndValueReturnNewValue("selected", updateValue);
     getElementIdAndValueReturnNewValue("totalPrice", totalPrice);
     getElementIdAndValueReturnNewValue("seat", seatupdateValue);
@@ -49,15 +54,15 @@ document.getElementById("A2").addEventListener("click", function () {
 
   const haveSeat = getElementInnerTextById("haveSeat");
   const totleSeat = haveSeat - 1;
-  
-  const element =makeElementAndAppenById('A2');
-  const constainer = document.getElementById('containerf')
+
+  const element = makeElementAndAppenById("A2");
+  const constainer = document.getElementById("containerf");
 
   if (A2 == false && updateValue <= 4) {
-    constainer.appendChild(element)
+    constainer.appendChild(element);
     addBgAndTextColorById("A2");
-    constainer.appendChild(element)
-    getElementIdAndValueReturnNewValue("abailableSeat",totleSeat )
+    constainer.appendChild(element);
+    getElementIdAndValueReturnNewValue("abailableSeat", totleSeat);
     getElementIdAndValueReturnNewValue("selected", updateValue);
     getElementIdAndValueReturnNewValue("totalPrice", totalPrice);
     getElementIdAndValueReturnNewValue("seat", seatupdateValue);
@@ -83,13 +88,13 @@ document.getElementById("A3").addEventListener("click", function () {
   const haveSeat = getElementInnerTextById("haveSeat");
   const totleSeat = haveSeat - 1;
 
-  const element =makeElementAndAppenById('A3');
-  const constainer = document.getElementById('containerf')
+  const element = makeElementAndAppenById("A3");
+  const constainer = document.getElementById("containerf");
 
   if (A3 == false && updateValue <= 4) {
     addBgAndTextColorById("A3");
-    constainer.appendChild(element)
-    getElementIdAndValueReturnNewValue("abailableSeat",totleSeat )
+    constainer.appendChild(element);
+    getElementIdAndValueReturnNewValue("abailableSeat", totleSeat);
     getElementIdAndValueReturnNewValue("selected", updateValue);
     getElementIdAndValueReturnNewValue("totalPrice", totalPrice);
     getElementIdAndValueReturnNewValue("seat", seatupdateValue);
@@ -115,13 +120,13 @@ document.getElementById("A4").addEventListener("click", function () {
   const haveSeat = getElementInnerTextById("haveSeat");
   const totleSeat = haveSeat - 1;
 
-  const element =makeElementAndAppenById('A4');
-  const constainer = document.getElementById('containerf')
+  const element = makeElementAndAppenById("A4");
+  const constainer = document.getElementById("containerf");
 
   if (A4 == false && updateValue <= 4) {
     addBgAndTextColorById("A4");
-    constainer.appendChild(element)
-    getElementIdAndValueReturnNewValue("abailableSeat",totleSeat )
+    constainer.appendChild(element);
+    getElementIdAndValueReturnNewValue("abailableSeat", totleSeat);
     getElementIdAndValueReturnNewValue("selected", updateValue);
     getElementIdAndValueReturnNewValue("totalPrice", totalPrice);
     getElementIdAndValueReturnNewValue("seat", seatupdateValue);
@@ -147,13 +152,13 @@ document.getElementById("B1").addEventListener("click", function () {
   const haveSeat = getElementInnerTextById("haveSeat");
   const totleSeat = haveSeat - 1;
 
-  const element = makeElementAndAppenById('B1');
-  const constainer = document.getElementById('containerf')
+  const element = makeElementAndAppenById("B1");
+  const constainer = document.getElementById("containerf");
 
   if (B1 == false && updateValue <= 4) {
     addBgAndTextColorById("B1");
-    constainer.appendChild(element)
-    getElementIdAndValueReturnNewValue("abailableSeat",totleSeat )
+    constainer.appendChild(element);
+    getElementIdAndValueReturnNewValue("abailableSeat", totleSeat);
     getElementIdAndValueReturnNewValue("selected", updateValue);
     getElementIdAndValueReturnNewValue("totalPrice", totalPrice);
     getElementIdAndValueReturnNewValue("seat", seatupdateValue);
@@ -179,13 +184,13 @@ document.getElementById("B2").addEventListener("click", function () {
   const haveSeat = getElementInnerTextById("haveSeat");
   const totleSeat = haveSeat - 1;
 
-  const element =makeElementAndAppenById('B2');
-  const constainer = document.getElementById('containerf')
+  const element = makeElementAndAppenById("B2");
+  const constainer = document.getElementById("containerf");
 
   if (B2 == false && updateValue <= 4) {
     addBgAndTextColorById("B2");
-    constainer.appendChild(element)
-    getElementIdAndValueReturnNewValue("abailableSeat",totleSeat )
+    constainer.appendChild(element);
+    getElementIdAndValueReturnNewValue("abailableSeat", totleSeat);
     getElementIdAndValueReturnNewValue("selected", updateValue);
     getElementIdAndValueReturnNewValue("totalPrice", totalPrice);
     getElementIdAndValueReturnNewValue("seat", seatupdateValue);
@@ -212,14 +217,13 @@ document.getElementById("B3").addEventListener("click", function () {
   const haveSeat = getElementInnerTextById("haveSeat");
   const totleSeat = haveSeat - 1;
 
-  const element =makeElementAndAppenById('B3');
-  const constainer = document.getElementById('containerf')
-  
+  const element = makeElementAndAppenById("B3");
+  const constainer = document.getElementById("containerf");
 
   if (B3 == false && updateValue <= 4) {
     addBgAndTextColorById("B3");
-    constainer.appendChild(element)
-    getElementIdAndValueReturnNewValue("abailableSeat",totleSeat )
+    constainer.appendChild(element);
+    getElementIdAndValueReturnNewValue("abailableSeat", totleSeat);
     getElementIdAndValueReturnNewValue("selected", updateValue);
     getElementIdAndValueReturnNewValue("totalPrice", totalPrice);
     getElementIdAndValueReturnNewValue("seat", seatupdateValue);
@@ -246,13 +250,13 @@ document.getElementById("B4").addEventListener("click", function () {
   const haveSeat = getElementInnerTextById("haveSeat");
   const totleSeat = haveSeat - 1;
 
-  const element =makeElementAndAppenById('B4');
-  const constainer = document.getElementById('containerf')
+  const element = makeElementAndAppenById("B4");
+  const constainer = document.getElementById("containerf");
 
   if (B4 == false && updateValue <= 4) {
     addBgAndTextColorById("B4");
-    constainer.appendChild(element)
-    getElementIdAndValueReturnNewValue("abailableSeat",totleSeat )
+    constainer.appendChild(element);
+    getElementIdAndValueReturnNewValue("abailableSeat", totleSeat);
     getElementIdAndValueReturnNewValue("selected", updateValue);
     getElementIdAndValueReturnNewValue("totalPrice", totalPrice);
     getElementIdAndValueReturnNewValue("seat", seatupdateValue);
@@ -269,74 +273,69 @@ document.getElementById("apply").addEventListener("click", function () {
   const inputCuppon = getValueElementById("cupponCode");
   if (inputCuppon === "New 15") {
     const inputCuppon = getValueElementById("cupponCode");
-    inputCuppon.value = ''
+    inputCuppon.value = "";
 
-
-    const discount = totalPrice * 15 / 100;
+    const discount = (totalPrice * 15) / 100;
     const grandMoney = totalPrice - discount;
-    
-    const table = document.getElementById('table');
-    const p = document.createElement('p')
-    p.innerText= `You got the discount: ${discount} `
-    table.appendChild(p)
-    p.setAttribute("class", true);
-    p.classList.add('py-4','font-bold');
 
+    const table = document.getElementById("table");
+    const p = document.createElement("p");
+    p.innerText = `You got the discount: ${discount} `;
+    table.appendChild(p);
+    p.setAttribute("class", true);
+    p.classList.add("py-4", "font-bold");
 
     // hide input value
-    const valu = '';
-    hideValue('cupponCode',valu)
+    const valu = "";
+    hideValue("cupponCode", valu);
 
     getElementIdAndValueReturnNewValue("finlTotal", grandMoney);
 
-
     const apply = document.getElementById("apply");
     apply.setAttribute("disabled", true);
-    
-  } 
-  
-  
-  
-  else if (inputCuppon === "New 20") {
-    
-    const discount = totalPrice * 20 / 100;
+  } else if (inputCuppon === "New 20") {
+    const discount = (totalPrice * 20) / 100;
     const grandMoney = totalPrice - discount;
-    
-    const table = document.getElementById('table');
-    const p = document.createElement('p')
-    p.innerText= `You got discount: ${discount}`
-    table.appendChild(p)
+
+    const table = document.getElementById("table");
+    const p = document.createElement("p");
+    p.innerText = `You got discount: ${discount}`;
+    table.appendChild(p);
     p.setAttribute("class", true);
-    p.classList.add('py-4','font-bold')
+    p.classList.add("py-4", "font-bold");
 
     // hide input value
-    const valu = '';
-    hideValue('cupponCode',valu)
-    
+    const valu = "";
+    hideValue("cupponCode", valu);
+
     getElementIdAndValueReturnNewValue("finlTotal", grandMoney);
 
     const apply = document.getElementById("apply");
     apply.setAttribute("disabled", true);
   } else {
-    console.log("You don't have any cuppon code");
+    const table = document.getElementById("table");
+    const p = document.createElement("p");
+    p.innerText = `You don't have any cuppon code.`;
+    table.appendChild(p);
+    // hide input value
+    const valu = "";
+    hideValue("cupponCode", valu);
+
+    const apply = document.getElementById("apply");
+    apply.setAttribute("disabled", true);
   }
 });
 
-document.getElementById('number').addEventListener('input', function(){
-  const input = document.getElementById('number');
+document.getElementById("number").addEventListener("input", function () {
+  const input = document.getElementById("number");
   const inputText = input.value;
-  const inputNumber =parseInt(inputText);
-  if( typeof inputNumber  ==="number" ){
-    const nextButton = document.getElementById('next');
-    nextButton.removeAttribute('disabled')
+  const inputNumber = parseInt(inputText);
+  if (typeof inputNumber === "number") {
+    const nextButton = document.getElementById("next");
+    nextButton.removeAttribute("disabled");
   }
+});
 
-})
-
-function reload(){
-  window.location.reload()
+function reload() {
+  window.location.reload();
 }
-
-
-
-
