@@ -15,9 +15,13 @@ document.getElementById("A1").addEventListener("click", function () {
   const haveSeat = getElementInnerTextById("haveSeat");
   const totleSeat = haveSeat - 1;
 
+  const element =makeElementAndAppenById('A1');
+  const constainer = document.getElementById('containerf')
+  
   if (A1 == false && updateValue <= 4) {
     addBgAndTextColorById("A1");
-    showSection("A1c");
+    // showSection("A1c");
+    constainer.appendChild(element)
     getElementIdAndValueReturnNewValue("abailableSeat",totleSeat )
     getElementIdAndValueReturnNewValue("selected", updateValue);
     getElementIdAndValueReturnNewValue("totalPrice", totalPrice);
@@ -45,10 +49,14 @@ document.getElementById("A2").addEventListener("click", function () {
 
   const haveSeat = getElementInnerTextById("haveSeat");
   const totleSeat = haveSeat - 1;
+  
+  const element =makeElementAndAppenById('A2');
+  const constainer = document.getElementById('containerf')
 
   if (A2 == false && updateValue <= 4) {
+    constainer.appendChild(element)
     addBgAndTextColorById("A2");
-    showSection("A2c");
+    constainer.appendChild(element)
     getElementIdAndValueReturnNewValue("abailableSeat",totleSeat )
     getElementIdAndValueReturnNewValue("selected", updateValue);
     getElementIdAndValueReturnNewValue("totalPrice", totalPrice);
@@ -75,9 +83,12 @@ document.getElementById("A3").addEventListener("click", function () {
   const haveSeat = getElementInnerTextById("haveSeat");
   const totleSeat = haveSeat - 1;
 
+  const element =makeElementAndAppenById('A3');
+  const constainer = document.getElementById('containerf')
+
   if (A3 == false && updateValue <= 4) {
     addBgAndTextColorById("A3");
-    showSection("A3c");
+    constainer.appendChild(element)
     getElementIdAndValueReturnNewValue("abailableSeat",totleSeat )
     getElementIdAndValueReturnNewValue("selected", updateValue);
     getElementIdAndValueReturnNewValue("totalPrice", totalPrice);
@@ -104,9 +115,12 @@ document.getElementById("A4").addEventListener("click", function () {
   const haveSeat = getElementInnerTextById("haveSeat");
   const totleSeat = haveSeat - 1;
 
+  const element =makeElementAndAppenById('A4');
+  const constainer = document.getElementById('containerf')
+
   if (A4 == false && updateValue <= 4) {
     addBgAndTextColorById("A4");
-    showSection("A4c");
+    constainer.appendChild(element)
     getElementIdAndValueReturnNewValue("abailableSeat",totleSeat )
     getElementIdAndValueReturnNewValue("selected", updateValue);
     getElementIdAndValueReturnNewValue("totalPrice", totalPrice);
@@ -133,9 +147,12 @@ document.getElementById("B1").addEventListener("click", function () {
   const haveSeat = getElementInnerTextById("haveSeat");
   const totleSeat = haveSeat - 1;
 
+  const element = makeElementAndAppenById('B1');
+  const constainer = document.getElementById('containerf')
+
   if (B1 == false && updateValue <= 4) {
     addBgAndTextColorById("B1");
-    showSection("B1c");
+    constainer.appendChild(element)
     getElementIdAndValueReturnNewValue("abailableSeat",totleSeat )
     getElementIdAndValueReturnNewValue("selected", updateValue);
     getElementIdAndValueReturnNewValue("totalPrice", totalPrice);
@@ -162,9 +179,12 @@ document.getElementById("B2").addEventListener("click", function () {
   const haveSeat = getElementInnerTextById("haveSeat");
   const totleSeat = haveSeat - 1;
 
+  const element =makeElementAndAppenById('B2');
+  const constainer = document.getElementById('containerf')
+
   if (B2 == false && updateValue <= 4) {
     addBgAndTextColorById("B2");
-    showSection("B2c");
+    constainer.appendChild(element)
     getElementIdAndValueReturnNewValue("abailableSeat",totleSeat )
     getElementIdAndValueReturnNewValue("selected", updateValue);
     getElementIdAndValueReturnNewValue("totalPrice", totalPrice);
@@ -191,11 +211,14 @@ document.getElementById("B3").addEventListener("click", function () {
 
   const haveSeat = getElementInnerTextById("haveSeat");
   const totleSeat = haveSeat - 1;
+
+  const element =makeElementAndAppenById('B3');
+  const constainer = document.getElementById('containerf')
   
 
   if (B3 == false && updateValue <= 4) {
     addBgAndTextColorById("B3");
-    showSection("B3c");
+    constainer.appendChild(element)
     getElementIdAndValueReturnNewValue("abailableSeat",totleSeat )
     getElementIdAndValueReturnNewValue("selected", updateValue);
     getElementIdAndValueReturnNewValue("totalPrice", totalPrice);
@@ -223,9 +246,12 @@ document.getElementById("B4").addEventListener("click", function () {
   const haveSeat = getElementInnerTextById("haveSeat");
   const totleSeat = haveSeat - 1;
 
+  const element =makeElementAndAppenById('B4');
+  const constainer = document.getElementById('containerf')
+
   if (B4 == false && updateValue <= 4) {
     addBgAndTextColorById("B4");
-    showSection("B4c");
+    constainer.appendChild(element)
     getElementIdAndValueReturnNewValue("abailableSeat",totleSeat )
     getElementIdAndValueReturnNewValue("selected", updateValue);
     getElementIdAndValueReturnNewValue("totalPrice", totalPrice);
@@ -251,7 +277,7 @@ document.getElementById("apply").addEventListener("click", function () {
     
     const table = document.getElementById('table');
     const p = document.createElement('p')
-    p.innerText= `You got discount: ${discount}`
+    p.innerText= `You got the discount: ${discount} `
     table.appendChild(p)
     p.setAttribute("class", true);
     p.classList.add('py-4','font-bold');
@@ -306,6 +332,10 @@ document.getElementById('number').addEventListener('input', function(){
   }
 
 })
+
+function reload(){
+  window.location.reload()
+}
 
 
 
