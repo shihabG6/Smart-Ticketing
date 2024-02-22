@@ -18,6 +18,7 @@ document.getElementById("A1").addEventListener("click", function () {
   if (A1 == false && updateValue <= 4) {
     addBgAndTextColorById("A1");
     showSection("A1c");
+    getElementIdAndValueReturnNewValue("abailableSeat",totleSeat )
     getElementIdAndValueReturnNewValue("selected", updateValue);
     getElementIdAndValueReturnNewValue("totalPrice", totalPrice);
     getElementIdAndValueReturnNewValue("seat", seatupdateValue);
@@ -48,6 +49,7 @@ document.getElementById("A2").addEventListener("click", function () {
   if (A2 == false && updateValue <= 4) {
     addBgAndTextColorById("A2");
     showSection("A2c");
+    getElementIdAndValueReturnNewValue("abailableSeat",totleSeat )
     getElementIdAndValueReturnNewValue("selected", updateValue);
     getElementIdAndValueReturnNewValue("totalPrice", totalPrice);
     getElementIdAndValueReturnNewValue("seat", seatupdateValue);
@@ -76,6 +78,7 @@ document.getElementById("A3").addEventListener("click", function () {
   if (A3 == false && updateValue <= 4) {
     addBgAndTextColorById("A3");
     showSection("A3c");
+    getElementIdAndValueReturnNewValue("abailableSeat",totleSeat )
     getElementIdAndValueReturnNewValue("selected", updateValue);
     getElementIdAndValueReturnNewValue("totalPrice", totalPrice);
     getElementIdAndValueReturnNewValue("seat", seatupdateValue);
@@ -104,6 +107,7 @@ document.getElementById("A4").addEventListener("click", function () {
   if (A4 == false && updateValue <= 4) {
     addBgAndTextColorById("A4");
     showSection("A4c");
+    getElementIdAndValueReturnNewValue("abailableSeat",totleSeat )
     getElementIdAndValueReturnNewValue("selected", updateValue);
     getElementIdAndValueReturnNewValue("totalPrice", totalPrice);
     getElementIdAndValueReturnNewValue("seat", seatupdateValue);
@@ -132,6 +136,7 @@ document.getElementById("B1").addEventListener("click", function () {
   if (B1 == false && updateValue <= 4) {
     addBgAndTextColorById("B1");
     showSection("B1c");
+    getElementIdAndValueReturnNewValue("abailableSeat",totleSeat )
     getElementIdAndValueReturnNewValue("selected", updateValue);
     getElementIdAndValueReturnNewValue("totalPrice", totalPrice);
     getElementIdAndValueReturnNewValue("seat", seatupdateValue);
@@ -160,6 +165,7 @@ document.getElementById("B2").addEventListener("click", function () {
   if (B2 == false && updateValue <= 4) {
     addBgAndTextColorById("B2");
     showSection("B2c");
+    getElementIdAndValueReturnNewValue("abailableSeat",totleSeat )
     getElementIdAndValueReturnNewValue("selected", updateValue);
     getElementIdAndValueReturnNewValue("totalPrice", totalPrice);
     getElementIdAndValueReturnNewValue("seat", seatupdateValue);
@@ -185,10 +191,12 @@ document.getElementById("B3").addEventListener("click", function () {
 
   const haveSeat = getElementInnerTextById("haveSeat");
   const totleSeat = haveSeat - 1;
+  
 
   if (B3 == false && updateValue <= 4) {
     addBgAndTextColorById("B3");
     showSection("B3c");
+    getElementIdAndValueReturnNewValue("abailableSeat",totleSeat )
     getElementIdAndValueReturnNewValue("selected", updateValue);
     getElementIdAndValueReturnNewValue("totalPrice", totalPrice);
     getElementIdAndValueReturnNewValue("seat", seatupdateValue);
@@ -218,6 +226,7 @@ document.getElementById("B4").addEventListener("click", function () {
   if (B4 == false && updateValue <= 4) {
     addBgAndTextColorById("B4");
     showSection("B4c");
+    getElementIdAndValueReturnNewValue("abailableSeat",totleSeat )
     getElementIdAndValueReturnNewValue("selected", updateValue);
     getElementIdAndValueReturnNewValue("totalPrice", totalPrice);
     getElementIdAndValueReturnNewValue("seat", seatupdateValue);
@@ -287,15 +296,13 @@ document.getElementById("apply").addEventListener("click", function () {
   }
 });
 
-
-document.getElementById('number').addEventListener('keyup', function(event){
-  const n = document.getElementById('number');
-  const g = n.value;
-  const b =parseInt(g)
-  console.log(typeof b)
-  
-  if( typeof b ==="number" ){
-    console.log('h')
+document.getElementById('number').addEventListener('input', function(){
+  const input = document.getElementById('number');
+  const inputText = input.value;
+  const inputNumber =parseInt(inputText);
+  if( typeof inputNumber  ==="number" ){
+    const nextButton = document.getElementById('next');
+    nextButton.removeAttribute('disabled')
   }
 
 })
