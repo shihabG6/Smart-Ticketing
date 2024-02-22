@@ -1,6 +1,4 @@
-function buyTicket(){
-  document.getElementById('ticketSection')
-}
+
 
 
 // seat-1
@@ -38,6 +36,9 @@ document.getElementById("A1").addEventListener("click", function () {
       apply.removeAttribute("disabled");
     }
   }
+  else{
+    alert("You cannot select more than four seats.")
+  }
 });
 
 // seat-2
@@ -73,6 +74,9 @@ document.getElementById("A2").addEventListener("click", function () {
       apply.removeAttribute("disabled");
     }
   }
+  else{
+    alert("You cannot select more than four seats.")
+  }
 });
 let A3 = false;
 document.getElementById("A3").addEventListener("click", function () {
@@ -104,6 +108,9 @@ document.getElementById("A3").addEventListener("click", function () {
       const apply = document.getElementById("apply");
       apply.removeAttribute("disabled");
     }
+  }
+  else{
+    alert("You cannot select more than four seats.")
   }
 });
 let A4 = false;
@@ -137,6 +144,9 @@ document.getElementById("A4").addEventListener("click", function () {
       apply.removeAttribute("disabled");
     }
   }
+  else{
+    alert("You cannot select more than four seats.")
+  }
 });
 let B1 = false;
 document.getElementById("B1").addEventListener("click", function () {
@@ -169,6 +179,9 @@ document.getElementById("B1").addEventListener("click", function () {
       apply.removeAttribute("disabled");
     }
   }
+  else{
+    alert("You cannot select more than four seats.")
+  }
 });
 let B2 = false;
 document.getElementById("B2").addEventListener("click", function () {
@@ -200,6 +213,9 @@ document.getElementById("B2").addEventListener("click", function () {
       const apply = document.getElementById("apply");
       apply.removeAttribute("disabled");
     }
+  }
+  else{
+    alert("You cannot select more than four seats.")
   }
 });
 
@@ -234,6 +250,9 @@ document.getElementById("B3").addEventListener("click", function () {
       apply.removeAttribute("disabled");
     }
   }
+  else{
+    alert("You cannot select more than four seats.")
+  }
 });
 
 let B4 = false;
@@ -266,6 +285,9 @@ document.getElementById("B4").addEventListener("click", function () {
       const apply = document.getElementById("apply");
       apply.removeAttribute("disabled");
     }
+  }
+  else{
+    alert("You cannot select more than four seats.")
   }
 });
 
